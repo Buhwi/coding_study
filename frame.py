@@ -13,12 +13,15 @@ def mem_usage():
     print(f'mem usage : {p.memory_info().rss/2**20}MB')
 
 def main():
-    start_time = time.process_time()
-
     print(solution())
+    #print(solution())  #입력 예가 더 있을 경우 사용
 
-    end_time = time.process_time()
-    print(f"time elapsed : {int(round((end_time - start_time) * 1000))}ms")
+
+start_time = time.process_time()
 
 main()
+
+end_time = time.process_time()
+print(f"time elapsed : {int(round((end_time - start_time) * 1000))}ms")
+
 mem_usage()
